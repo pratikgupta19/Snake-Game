@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #wrap{
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+   <div id="sn_img"><div class="loader"></div><p id="alert">for Background Sound click on the mute icon</p></div>
+    <div id="wrap" class="container disabled">
+        <div class="sound">Sound</div>
+        <div class="icm"><img id="Image" src="img/mute.png" onclick="sound()">
+        <div id="scoreboard">Score: 0</div>
+        <div id="hiscoreboard">HighScore: 0</div>
+        <div id="board"></div>
+    </div>
+    <script>
+        setTimeout(function(){
+            document.getElementById("wrap").style.display = "flex";
+            document.getElementById("sn_img").style.display = "none";
+        },10000)
+        
+    </script>
+</body>
+<script src="js/script.js"></script>
+</html>

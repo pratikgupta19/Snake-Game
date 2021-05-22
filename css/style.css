@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#sn_img{
+    background: url(../img/snake1.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#alert{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    bottom: 10vh;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.container{
+    background: url(../img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound{
+    position: absolute;
+    top: 10px;
+    left: 10vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+.icm img{
+    position: absolute;
+    top: 15px;
+    height: 22px;
+    width: 22px;
+    left: 22vh;
+}
+#play{
+    display: none;
+}
+#scoreboard{
+    position: absolute;
+    top: 9px;
+    right: 10vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#hiscoreboard{
+    position: absolute;
+    top: 35px;
+    right: 10vh;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#board{
+    background: linear-gradient(rgb(179, 235, 179), rgb(240, 240, 161));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2PX solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: red;
+    border: 2px solid purple;
+    border-radius: 20%;
+   
+}
+.snake{
+    background-color: rgb(247, 53, 53);
+    border-radius: 40%;
+    
+    border: .25vmin solid white;
+   /* border-radius: 12px; 
+    */
+}
+.food{
+    
+    border-radius: 50%;
+    
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+  
+}
